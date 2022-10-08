@@ -1,6 +1,6 @@
 # 1. Напишите программу, удаляющую из текста все слова, содержащие "абв". В тексте используется
 # разделитель пробел.
-#in
+# in
 # Number of words: 10
 #
 # out
@@ -19,3 +19,21 @@
 #
 # out
 # The data is incorrect
+
+from random import choice
+
+
+def new_list():
+    str = ['а', 'б', 'в']
+    my_list = []
+    num = int(input('Количество элементов:'))
+    for j in range(num):
+        s = ''
+        for i in range(3):
+            s = s + choice(str)
+        my_list.append(s)
+    s = (' '.join(my_list))
+    return (s)
+
+
+print(new_list())

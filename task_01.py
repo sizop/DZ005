@@ -20,20 +20,37 @@
 # out
 # The data is incorrect
 
-from random import choice
+# from random import choice
+#
+#
+# def new_list():
+#     str = ['а', 'б', 'в']
+#     my_list = []
+#     num = int(input('Количество элементов:'))
+#     for j in range(num):
+#         s = ''
+#         for i in range(3):
+#             s = s + choice(str)
+#         my_list.append(s)
+#     s = (' '.join(my_list))
+#     return (s)
+#
+#
+# print(new_list())
+
+
+from random import sample
 
 
 def new_list():
-    str = ['а', 'б', 'в']
+    string = 'абв'
     my_list = []
     num = int(input('Количество элементов:'))
     for j in range(num):
-        s = ''
-        for i in range(3):
-            s = s + choice(str)
-        my_list.append(s)
-    s = (' '.join(my_list))
-    return (s)
+        s = sample(string, 3)
+        my_list.append(''.join(s))
+    print(' '.join(my_list))
+    return ' '.join(my_list)
 
 
-print(new_list())
+print(new_list().replace('абв ', ''))

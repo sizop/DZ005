@@ -1,8 +1,0 @@
-Алгоритм RLE
-https://fb.ru/article/369240/algoritm-rle-opisanie-osobennosti-pravila-i-primeryi
-
-Эмодзи
-https://unicode-table.com/ru/emoji/
-
-Стратегии выигрыша
-https://informatika.shkolkovo.net/catalog/igry/prostejshie-igry-poisk-vyigryshnoj-strategii

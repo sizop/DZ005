@@ -46,11 +46,11 @@ def new_list():
     string = 'абв'
     my_list = []
     num = int(input('Количество элементов:'))
+    # s = (sample(string, 3) for j in range(num))
     for j in range(num):
         s = sample(string, 3)
         my_list.append(''.join(s))
     print(' '.join(my_list))
     return ' '.join(my_list)
-
 
 print(new_list().replace('абв ', ''))

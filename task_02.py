@@ -40,12 +40,6 @@
 # print(s)
 #----------------------------------------------------------
 
-from itertools import groupby, starmap
-from os import path
-from random import sample, choice, randint
-
-#
-#
 def rle_encode(text="text_words.txt", code_text="text_code_words.txt"):
     if path.exists(text) and not path.exists(code_text):
         with open(text) as my_f_1, \
@@ -56,7 +50,7 @@ def rle_encode(text="text_words.txt", code_text="text_code_words.txt"):
         print("The files do not exist in the system!")
 
 def rle_decode(text="out_text_words.txt", code_text="text_code_words.txt"):
-    if path.exists(code_text): # and not path.exists(text):
+    if path.exists(code_text):
         with open(code_text) as my_f_1, \
                 open(text, "a") as my_f_2:
             for i in my_f_1:
